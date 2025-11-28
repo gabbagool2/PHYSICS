@@ -142,7 +142,7 @@ for test in sorted_tests:
 ax.axhline(y=9.81, color='red', linestyle='-', linewidth=1.5, label='Theoretical g (9.81)')
 ax.axhline(y=0, color='black', linestyle='-', linewidth=2, label='zero')
 ax.set_ylabel('Calculated g ($m/s^2$)')
-ax.set_title('Calculated Gravity by Material and Test Iteration')
+ax.set_title(' Acceleration due to gravity for each material ')
 ax.set_xticks(x + width * 2.5) 
 ax.set_xticklabels(materials)
 ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
@@ -152,5 +152,5 @@ ax.grid(which='minor', axis='y', linestyle=':', alpha=0.4, color='gray')
 
 #executes graph
 plt.tight_layout()
-plt.show()
-plt.savefig('detailed_y_axis_plot.png')
+#plt.show()
+plt.savefig('plot.png')
